@@ -5,7 +5,7 @@ function Workouts() {
   const [workouts, setWorkouts] = useState([]);
 
   useEffect(() => {
-    fetch(`${API_BASE_URL}/api/workouts/`)
+    fetch(`${API_BASE_URL}/api/v1/workouts/`)
       .then(response => response.json())
       .then(data => setWorkouts(data))
       .catch(error => console.error('Error fetching workouts:', error));

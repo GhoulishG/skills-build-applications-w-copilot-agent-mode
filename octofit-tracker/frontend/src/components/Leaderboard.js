@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { API_BASE_URL } from '../index';
+
+// Update the API_BASE_URL import to include the Codespace Django REST API endpoint suffix
+const API_BASE_URL = 'https://urban-system-7wgpwqjvqwjhr64r-8000.app.github.dev'; // Replace <codespace-name> with your actual Codespace name
 
 function Leaderboard() {
   const [leaderboard, setLeaderboard] = useState([]);

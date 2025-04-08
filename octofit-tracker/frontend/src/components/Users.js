@@ -5,7 +5,7 @@ function Users() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch(`${API_BASE_URL}/api/users/`)
+    fetch(`${API_BASE_URL}/octofit-tracker/api/users/`)
       .then(response => response.json())
       .then(data => setUsers(data))
       .catch(error => console.error('Error fetching users:', error));
